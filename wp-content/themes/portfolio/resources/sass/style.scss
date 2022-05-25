@@ -1,6 +1,24 @@
 @import "reset";
+@import url("https://use.typekit.net/zyw5skq.css");
 
-.hidden{
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F9F3EC;
+  font-family: museo-sans, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: #3D3329;
+  text-decoration: none;
+}
+
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -10,4 +28,49 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+// NAVIGATION
+.nav {
+  background-color: rgba(255, 255, 255, 0.65);
+  font-weight: 300;
+  font-size: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__container {
+  display: flex;
+  gap: 130px;
+}
+
+.nav__item--current {
+  font-weight: 700;
+}
+
+.nav__languages {
+  font-size: 17px;
+}
+
+
+
+
+// FOOTER
+footer{
+  background-color: #CAA07D;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.footer__right, .footer__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }

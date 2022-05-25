@@ -1,5 +1,6 @@
 <?php
 // Charger les fichiers nécessaires
+require_once(__DIR__ . '/CustomSearchQuery.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuWalker.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuItem.php');
 require_once(__DIR__ . '/Forms/BaseFormController.php');
@@ -187,13 +188,42 @@ function prt_get_contact_field_error($field)
     return '<p>' . $_SESSION['contact_form_feedback']['errors'][$field] . '</p>';
 }
 
-// Fonction permettant d'inclure des "partials" dans la vue et d'y injecter des variables "locales" (uniquement disponibles dans le scope de l'inclusion).
+// Générer un lien vers la première page utilisant un certain template
+function prt_get_template_page(string $template) {
+	// Créer une WP_Query pour les pages
+	$query = new WP_Query([
+		'post_type' => 'page', // uniquement récupérer des pages
+		'post_status' => 'publish', // uniquement les pages publiées
+		'meta_query' => [
+			[
+				'key' => '_wp_page_template',
+				'value' => $template . '.php', // Filtrer sur le template utilisé
+			]
+		]
+	]);
 
+	return $query->posts[0] ?? null;
+}
+
+// Fonction permettant d'inclure des "partials" dans la vue et d'y injecter des variables "locales" (uniquement disponibles dans le scope de l'inclusion).
 function prt_include(string $partial, array $variables = [])
 {
     extract($variables);
 
     include(__DIR__ . '/partials/' . $partial . '.php');
+}
+
+// Récupérer les réseaux sociaux via une requête Wordpress
+function prt_get_socials()
+{
+	// 1. on instancie l'objet WP_Query
+	$socials = new PRT_CustomSearchQuery([
+		'post_type' => 'social',
+		'order' => 'DESC',
+	]);
+
+	// 2. on retourne l'objet WP_Query
+	return $socials;
 }
 
 // Fonction qui charge les assets compilés et retourne leur chemin absolu
