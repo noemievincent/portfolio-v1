@@ -3,17 +3,23 @@
 <?php if(have_posts()): while (have_posts()): the_post(); ?>
     <main class="layout about">
         <h2 class="about__title"><?= get_the_title(); ?></h2>
-        <div class="about__content">
+        <div class="about__content has-2-columns">
             <section class="about__hobbies">
-                <h2><?= __('Mes loisirs', 'dw'); ?></h2>
+                <h3><?= __('Qui suis-je ?', 'prt'); ?></h3>
                 <div class="wysiwyg">
                     <?= get_field('hobbies'); ?>
                 </div>
             </section>
-            <section class="about__presentation">
-                <h2><?= __('Qui suis-je ?', 'dw'); ?></h2>
-                <div class="wysiwyg">
-                    <?= get_field('presentation'); ?>
+            <section class="about__right">
+                <section class="about__presentation">
+                    <h3><?= __('Parcours professionnel', 'prt'); ?></h3>
+                    <div class="wysiwyg">
+                        <?= get_field('presentation'); ?>
+                    </div>
+                </section>
+                <div class="cta">
+                    <a href="https://cv.noemie-vincent.be/" class="cta__link"><?= __('Découvrir mon CV', 'prt'); ?></a>
+                    <a href="<?= get_the_permalink(prt_get_template_page('template-contact')); ?>"><?= __('Me contacter', 'prt'); ?></a>
                 </div>
             </section>
         </div>

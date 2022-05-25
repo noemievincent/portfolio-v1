@@ -8,10 +8,13 @@
     <script type="text/javascript" src="<?= prt_mix('js/script.js'); ?>"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body class="<?= is_home() ? 'home':'main' ?>">
 <header class="header">
-    <h1 class="header__title hidden"><?= get_bloginfo('name'); ?></h1>
-    <p class="header__tagline hidden"><?= get_bloginfo('description'); ?></p>
+    <div class="info">
+        <h1 class="header__title hidden"><?= get_bloginfo('name'); ?></h1>
+        <p class="header__tagline hidden"><?= get_bloginfo('description'); ?></p>
+
+    </div>
     <nav class="header__nav nav">
         <h2 class="nav__title hidden"><?= __('Navigation principale', 'prt'); ?></h2>
 	    <?php  wp_nav_menu([
@@ -21,11 +24,11 @@
 		    'menu_id' => 'navigation',
 		    'walker' => new PrimaryMenuWalker(),
 	    ]); ?>
-        <div class="nav__languages">
-            <?php foreach (pll_the_languages(['raw' => true]) as $code => $locale) : ?>
-                <a href="<?= $locale['url']; ?>" lang="<?= $locale['locale']; ?>" hreflang="<?= $locale['locale']; ?>"
-                   class="nav__locale" title="<?= $locale['name']; ?>"><?= $code; ?></a>
-            <?php endforeach; ?>
-        </div>
     </nav>
+    <div class="nav__languages">
+        <?php foreach (pll_the_languages(['raw' => true]) as $code => $locale) : ?>
+            <a href="<?= $locale['url']; ?>" lang="<?= $locale['locale']; ?>" hreflang="<?= $locale['locale']; ?>"
+               class="nav__locale <?= $locale['current_lang']?' nav__locale--current':''?>" title="<?= $locale['name']; ?>"><?= $code; ?></a>
+        <?php endforeach; ?>
+    </div>
 </header>

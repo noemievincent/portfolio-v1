@@ -1,9 +1,9 @@
     <footer class="footer">
         <h2 class="footer__title hidden"><?= __('Pied de page', 'prt'); ?></h2>
-        <a href="#">Noémie Vincent - 2022</a>
+        <a href="<?= get_home_url(); ?>">Noémie Vincent - 2022</a>
         <div class="footer__right">
             <a href="<?= get_the_permalink(prt_get_template_page('template-legals')); ?>"><?= __('mentions légales', 'prt'); ?></a>
-            <ul class="footer__container">
+            <ul class="footer__socials">
                 <?php if (($socials = prt_get_socials())->have_posts()):while ($socials->have_posts()): $socials->the_post(); ?>
                     <li class="footer__item">
                         <figure class="footer__fig">
