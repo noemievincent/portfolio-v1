@@ -18,22 +18,48 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin: 0 100px;
-  grid-column: 1 / 4;
-  //background-color: rgba(255, 165, 0, 0.3);
-  //position: relative;
+.btn {
+  font-family: museo-sans, sans-serif;
+  color: #FFFFFF;
+  background-color: #7DA7CA;
+  border: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 25px;
 }
-//
-//main:after {
-//  content: "";
-//  background-color: rgba(255, 192, 203, 0.3);
-//  height: 100%;
-//  width: 50%;
-//  position: absolute;
-//  top: 0;
-//  left: 0;
-//}
+
+.btn--secondary {
+  background-color: transparent;
+  color: #7DA7CA;
+}
+
+main {
+  margin: 40px 100px;
+  grid-column: 1 / 4;
+  position: relative;
+}
+
+main:before {
+  content: "";
+  background-color: rgba(255, 165, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main:after {
+  content: "";
+  background-color: rgba(255, 192, 203, 0.3);
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 h2 {
   color: #3D3329;
@@ -41,7 +67,7 @@ h2 {
   font-family: montserrat, sans-serif;
   font-size: 40px;
   font-weight: 600;
-  margin: 40px 0;
+  //margin: 40px 0;
 }
 
 h3 {
@@ -50,12 +76,14 @@ h3 {
   font-family: montserrat, sans-serif;
   font-size: 25px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  //margin-bottom: 30px;
 }
 
 .has-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 70px;
 }
 
 .hidden {
@@ -68,6 +96,37 @@ h3 {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+//CONTACT
+.form .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], input[type=email], textarea {
+  background-color: #FDFAF7;
+  border: 1px solid #CAA07D;
+  border-radius: 20px;
+  min-height: 30px;
+  min-width: 270px;
+}
+
+::placeholder {
+  font-family: museo-sans, sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
+  font-weight: 100;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px 0 10px
 }
 
 //HOME

@@ -18,8 +18,8 @@
                     </div>
                 </section>
                 <div class="cta">
-                    <a href="https://cv.noemie-vincent.be/" class="cta__link"><?= __('Découvrir mon CV', 'prt'); ?></a>
-                    <a href="<?= get_the_permalink(prt_get_template_page('template-contact')); ?>"><?= __('Me contacter', 'prt'); ?></a>
+                    <a href="https://cv.noemie-vincent.be/" class="cta__link btn btn--secondary"><?= __('Découvrir mon CV', 'prt'); ?></a>
+                    <a href="<?= get_the_permalink(prt_get_template_page('template-contact')); ?>" class="cta__link btn"><?= __('Me contacter', 'prt'); ?></a>
                 </div>
             </section>
         </div>

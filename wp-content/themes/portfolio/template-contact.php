@@ -11,29 +11,26 @@
                     <?php if(isset($_SESSION['contact_form_feedback'])) : ?>
                         <p><?= __('Oups ! Il y a des erreurs dans le formulaire', 'prt') ?></p>
                     <?php endif; ?>
-                    <div class="form__field">
-                        <label for="firstname" class="form__label"><?= __('Votre prénom', 'prt') ?></label>
-                        <input type="text" name="firstname" id="firstname" class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
-                        <?= prt_get_contact_field_error('firstname'); ?>
+                    <div class="flex">
+                        <div class="form__field">
+                            <label for="firstname" class="form__label"><?= __('prénom', 'prt') ?></label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Lucie" class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
+                            <?= prt_get_contact_field_error('firstname'); ?>
+                        </div>
+                        <div class="form__field">
+                            <label for="lastname" class="form__label"><?= __('nom', 'prt') ?></label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Breton" class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
+                            <?= prt_get_contact_field_error('lastname'); ?>
+                        </div>
                     </div>
                     <div class="form__field">
-                        <label for="lastname" class="form__label"><?= __('Votre nom', 'prt') ?></label>
-                        <input type="text" name="lastname" id="lastname" class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
-                        <?= prt_get_contact_field_error('lastname'); ?>
-                    </div>
-                    <div class="form__field">
-                        <label for="email" class="form__label"><?= __('Votre adresse e-mail', 'prt') ?></label>
-                        <input type="email" name="email" id="email" class="form__input" value="<?= prt_get_contact_field_value('email'); ?>">
+                        <label for="email" class="form__label"><?= __('adresse e-mail', 'prt') ?></label>
+                        <input type="email" name="email" id="email" placeholder="lucie-breton@gmail.com" class="form__input" value="<?= prt_get_contact_field_value('email'); ?>">
                         <?= prt_get_contact_field_error('email'); ?>
                     </div>
                     <div class="form__field">
-                        <label for="phone" class="form__label"><?= __('Votre numéro de téléphone', 'prt') ?></label>
-                        <input type="tel" name="phone" id="phone" class="form__input" value="<?= prt_get_contact_field_value('phone'); ?>">
-                        <?= prt_get_contact_field_error('phone'); ?>
-                    </div>
-                    <div class="form__field">
-                        <label for="message" class="form__label"><?= __('Votre message', 'prt') ?></label>
-                        <textarea name="message" id="message" cols="30" rows="10" class="form__input"><?= prt_get_contact_field_value('message'); ?></textarea>
+                        <label for="message" class="form__label"><?= __('message', 'prt') ?></label>
+                        <textarea name="message" id="message" cols="30" rows="12" class="form__input"><?= prt_get_contact_field_value('message'); ?></textarea>
                         <?= prt_get_contact_field_error('message'); ?>
                     </div>
                     <div class="form__field">
@@ -46,7 +43,7 @@
                     <div class="form__actions">
                         <?php wp_nonce_field('nonce_submit_contact'); ?>
                         <input type="hidden" name="action" value="submit_contact_form" />
-                        <button class="form__button" type="submit"><?= __('Envoyer', 'prt') ?></button>
+                        <button class="form__button btn" type="submit"><?= __('Envoyer', 'prt') ?></button>
                     </div>
                 </form>
             <?php else : ?>
