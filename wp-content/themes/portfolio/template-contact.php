@@ -52,6 +52,7 @@
         </section>
         <section class="contact__coords">
             <h3><?= __('Coordonnées', 'prt'); ?></h3>
+
         </section>
         </div>
     </main>

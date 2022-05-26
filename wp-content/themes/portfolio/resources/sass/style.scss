@@ -150,7 +150,7 @@ input[type=text], input[type=email], textarea {
 label {
   font-size: 16px;
   font-weight: 300;
-  margin: 20px 0 10px
+  margin: 20px 0 10px;
 }
 
 //HOME
@@ -249,6 +249,14 @@ header {
   border-left: 1px #3D3329 solid;
   padding-left: 8px;
   margin-left: 8px;
+}
+
+//ABOUT
+.about__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 // FOOTER

@@ -48,21 +48,22 @@ register_post_type('project', [
 ]);
 
 // Enregistrer un seul custom post-type pour mon parcours
-register_post_type('career', [
-    'label' => 'Parcours',
-    'labels' => [
-        'name' => 'Parcours',
-        'singular_name' => 'Parcours',
-    ],
-    'public' => true,
-    'has_archive' => true,
-    'show_ui' => true,
-    'description' => 'Mon parcours professionnel',
-    'menu_position' => 5,
-    'menu_icon' => 'dashicons-welcome-learn-more',
-    'supports' => ['title','editor','thumbnail'],
-    'rewrite' => ['slug' => 'career'],
+register_post_type('experience', [
+	'label' => 'Parcours professionnels',
+	'labels' => [
+		'name' => 'Parcours professionnels',
+		'singular_name' => 'Parcours professionnel',
+	],
+	'public' => true,
+	'has_archive' => true,
+	'show_ui' => true,
+	'description' => 'Mon parcours professionnel',
+	'menu_position' => 5,
+	'menu_icon' => 'dashicons-welcome-learn-more',
+	'supports' => ['title','editor','thumbnail'],
+	'rewrite' => ['slug' => 'experience'],
 ]);
+
 
 register_post_type('social', [
     'label' => 'Réseaux sociaux',
@@ -222,10 +223,35 @@ function prt_get_socials()
 		'order' => 'DESC',
 	]);
 
+//var_dump($socials);die();
 	// 2. on retourne l'objet WP_Query
 	return $socials;
 }
 
+// Récupérer le parcours via une requête Wordpress
+function prt_get_careers()
+{
+	// 1. on instancie l'objet WP_Query
+	$careers = new PRT_CustomSearchQuery([
+		'post_type' => 'experience',
+		'order' => 'DESC',
+	]);
+
+	// 2. on retourne l'objet WP_Query
+	return $careers;
+}
+
+function prt_get_exp()
+{
+	// 1. on instancie l'objet WP_Query
+	$exp = new PRT_CustomSearchQuery([
+		'post_type' => 'experience',
+		'order' => 'DESC',
+	]);
+
+	// 2. on retourne l'objet WP_Query
+	return $exp;
+}
 // Fonction qui charge les assets compilés et retourne leur chemin absolu
 function prt_mix($path)
 {
