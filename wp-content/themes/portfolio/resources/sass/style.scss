@@ -18,6 +18,30 @@ a {
   text-decoration: none;
 }
 
+.info {
+  position: absolute;
+}
+
+.homepage__link {
+  opacity: 0;
+}
+
+.homepage__logo::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url("../../img/logo.svg") no-repeat;
+}
+
+.home .homepage__logo::before {
+  height: 180%;
+}
+
 .btn {
   font-family: museo-sans, sans-serif;
   color: #FFFFFF;
@@ -149,17 +173,13 @@ label {
   gap: 90px;
 }
 
-.home .nav__item:nth-child(n+2) {
+.home .nav__item {
   background-color: #E4CFBE;
   font-size: 30px;
   font-weight: 600;
   width: 300px;
   padding: 20px 15px;
   border-radius: 50px;
-}
-
-.home .nav__item:first-child {
-  display: none;
 }
 
 .home main {
@@ -199,6 +219,7 @@ header {
 .main .nav {
   display: flex;
   justify-content: space-between;
+  margin-left: 80px;
 }
 
 .main .nav__container {
@@ -213,9 +234,21 @@ header {
 
 .nav__languages {
   position: absolute;
-  top: 25px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   font-size: 17px;
+  padding: 12px 16px;
+  //display: flex;
+  //align-items: center;
+  //background-color: rgba(202, 160, 125, 0.7);
+  //border-radius: 25px;
+}
+
+.nav__locale + .nav__locale {
+  //order: 2;
+  border-left: 1px #3D3329 solid;
+  padding-left: 8px;
+  margin-left: 8px;
 }
 
 // FOOTER
@@ -244,4 +277,18 @@ footer{
   height: 1px;
   margin: 0 10px;
   background-color: #3D3329;
+}
+
+.footer__img {
+  height: 30px;
+  fill: #3D3329;
+  transition: fill 0.3s ease-in-out;
+}
+
+.github:hover {
+  fill: #6E5494;
+}
+
+.linkedin:hover {
+  fill: #0E76A8;
 }

@@ -8,7 +8,7 @@
                     <li class="footer__item">
                         <figure class="footer__fig">
                             <a href="<?= get_field('url') ?>" class="footer__link">
-                                <img src="<?php the_post_thumbnail_url(); ?>" alt="<?= get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true) ?>" width="36px" height="33px" class="footer__img">
+                                <img src="<?php the_post_thumbnail_url(); ?>" class="footer__img style-svg <?= get_post_field( 'post_name', get_post()); ?>" alt="<?= get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true) ?>">
                             </a>
                         </figure>
                     </li>
