@@ -23,7 +23,15 @@ main:after {
   z-index: -1;
 }
 
+.main {
+  background: url('../../img/main-blob.svg') no-repeat;
+  background-size: cover;
+}
 
+.home {
+  background: url('../../img/home-blob.svg') no-repeat;
+  background-size: cover;
+}
 
 html, body {
   height: 100%;
@@ -117,7 +125,7 @@ h3 {
   font-family: montserrat, sans-serif;
   font-size: 25px;
   font-weight: 600;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 
@@ -144,14 +152,19 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 600px;
+  max-width: 460px;
 }
+
 .form .flex {
   display: flex;
-  justify-content: space-between;
+  flex: 1;
+  gap: 10px;
 }
+
+
 .form__field {
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
@@ -160,13 +173,12 @@ input[type=text], input[type=email], textarea {
   border: 1px solid #CAA07D;
   border-radius: 20px;
   min-height: 30px;
-  min-width: 270px;
+  padding-left: 12px;
 }
 
 ::placeholder {
   font-family: museo-sans, sans-serif;
   color: rgba(0, 0, 0, 0.5);
-  padding-left: 10px;
   font-weight: 100;
 }
 
@@ -223,36 +235,41 @@ label {
   justify-content: center;
 }
 
-.nav__flex{
-}
-
 .home .nav {
-  display: flex;
-  text-align: center;
   align-self: center;
-  justify-content: center;
-  align-items: center;
+  display: flex;
 }
 
 .home .nav__container {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
-  gap: 90px;
+  text-align: center;
+  gap: 50px;
 }
 
 .home .nav__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+
+.home .nav__link {
+  flex: 1;
   background-color: #E4CFBE;
   font-size: 30px;
   font-weight: 600;
-  width: 300px;
+  min-width: 300px;
   padding: 30px 15px;
   border-radius: 50px;
   transition: background-color 0.3s ease-in-out;
 }
 
-.home .nav__item:hover, .home .nav__item:focus {
+.home .nav__link:hover, .home .nav__link:focus {
   background-color: #F3EAE2;
   cursor: pointer;
 }
@@ -266,7 +283,7 @@ label {
   font-size: 40px;
   text-align: center;
   margin: auto 0;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
 }
 
 .home h2 {
@@ -337,12 +354,11 @@ header {
   display: flex;
   gap: 10px;
   font-weight: 600;
-  letter-spacing: 1px;
 }
 
 .career__title {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .career__location {
@@ -381,7 +397,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .cta__link {

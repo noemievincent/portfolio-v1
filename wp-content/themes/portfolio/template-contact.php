@@ -14,12 +14,12 @@
                     <div class="flex">
                         <div class="form__field">
                             <label for="firstname" class="form__label"><?= __('prénom', 'prt') ?></label>
-                            <input type="text" name="firstname" id="firstname" placeholder="Lucie" class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
+                            <input type="text" size="5" name="firstname" id="firstname" placeholder="Lucie" class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
                             <?= prt_get_contact_field_error('firstname'); ?>
                         </div>
                         <div class="form__field">
                             <label for="lastname" class="form__label"><?= __('nom', 'prt') ?></label>
-                            <input type="text" name="lastname" id="lastname" placeholder="Breton" class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
+                            <input type="text" size="5" name="lastname" id="lastname" placeholder="Breton" class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
                             <?= prt_get_contact_field_error('lastname'); ?>
                         </div>
                     </div>

@@ -131,7 +131,6 @@ function prt_get_exp()
 	// 1. on instancie l'objet WP_Query
 	$exp = new PRT_CustomSearchQuery([
 		'post_type' => 'experience',
-		'order' => 'ASC',
 	]);
 
 	// 2. on retourne l'objet WP_Query

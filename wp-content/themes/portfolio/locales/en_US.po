@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Portfolio\n"
+"POT-Creation-Date: 2022-05-26 15:45+0200\n"
+"PO-Revision-Date: 2022-05-26 15:50+0200\n"
+"Last-Translator: \n"
+"Language-Team: Noémie\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive-project.php:5
+msgid "Mes projets"
+msgstr "Projects"
+
+#: footer.php:2
+msgid "Pied de page"
+msgstr "Footer"
+
+#: footer.php:5
+msgid "mentions légales"
+msgstr "legal information"
+
+#: header.php:17
+msgid "Accueil"
+msgstr "Home"
+
+#: header.php:23
+msgid "Navigation principale"
+msgstr "Main navigation"
+
+#: template-about.php:7
+msgid "Qui suis-je ?"
+msgstr "Who am I ?"
+
+#: template-about.php:14
+msgid "Parcours professionnel"
+msgstr "Career path"
+
+#: template-about.php:18
+msgid "Se rendre sur le site de l‘:name"
+msgstr "Go to :name‘s website"
+
+#: template-about.php:35
+msgid "Découvrir mon CV"
+msgstr "See my CV"
+
+#: template-about.php:36
+msgid "Me contacter"
+msgstr "Contact me"
+
+#: template-contact.php:8
+msgid "Formulaire de contact"
+msgstr "Contact form"
+
+#: template-contact.php:12
+msgid "Oups ! Il y a des erreurs dans le formulaire"
+msgstr "Oops ! There are errors in the form"
+
+#: template-contact.php:16
+msgid "prénom"
+msgstr "first name"
+
+#: template-contact.php:21
+msgid "nom"
+msgstr "last name"
+
+#: template-contact.php:27
+msgid "adresse e-mail"
+msgstr "email address"
+
+#: template-contact.php:32
+msgid "message"
+msgstr "message"
+
+#: template-contact.php:39
+msgid "conditions générals d’utilisations"
+msgstr "general conditions of use"
+
+#: template-contact.php:39
+msgid "J’accepte les :conditions"
+msgstr "I accept the :conditions"
+
+#: template-contact.php:46
+msgid "Envoyer"
+msgstr "Submit"
+
+#: template-contact.php:50
+msgid "Merci ! Votre message a bien été envoyé."
+msgstr "Thank you ! Your message has been sent."
+
+#: template-contact.php:54
+msgid "Coordonnées"
+msgstr "Contact details"
+
+#: template-contact.php:58 template-legals.php:12
+msgid "Mail"
+msgstr "Mail"
+
+#: template-contact.php:67 template-legals.php:21
+msgid "Téléphone"
+msgstr "Phone number"
+
+#: template-contact.php:74 template-legals.php:28
+msgid "Adresse"
+msgstr "Address"
+
+#: template-legals.php:8
+msgid "Informations légales"
+msgstr "Legal information"
+
+#: template-legals.php:40
+msgid "Clause de confidentialité"
+msgstr "Confidentiality clause"
