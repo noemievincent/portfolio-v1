@@ -1,8 +1,33 @@
 @import "reset";
 @import url("https://use.typekit.net/zyw5skq.css");
 
+
+main:before {
+  content: "";
+  //background-color: rgba(255, 165, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main:after {
+  content: "";
+  //background-color: rgba(255, 192, 203, 0.3);
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
 html, body {
   height: 100%;
+  color: #3D3329;
 }
 
 body {
@@ -20,6 +45,7 @@ a {
 
 .info {
   position: absolute;
+  left: 25px;
 }
 
 .homepage__link {
@@ -59,34 +85,13 @@ a {
 }
 
 main {
-  margin: 40px 100px;
+  margin: 40px 200px;
   grid-column: 1 / 4;
   position: relative;
 }
 
-main:before {
-  content: "";
-  background-color: rgba(255, 165, 0, 0.3);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-main:after {
-  content: "";
-  background-color: rgba(255, 192, 203, 0.3);
-  height: 100%;
-  width: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 
 h2 {
-  color: #3D3329;
   text-transform: uppercase;
   font-family: montserrat, sans-serif;
   font-size: 40px;
@@ -95,19 +100,18 @@ h2 {
 }
 
 h3 {
-  color: #3D3329;
   text-transform: uppercase;
   font-family: montserrat, sans-serif;
   font-size: 25px;
   font-weight: 600;
   margin-top: 40px;
-  //margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .has-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  //gap: 70px;
 }
 
 .hidden {
@@ -123,6 +127,12 @@ h3 {
 }
 
 //CONTACT
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
 .form .flex {
   display: flex;
   justify-content: space-between;
@@ -150,7 +160,45 @@ input[type=text], input[type=email], textarea {
 label {
   font-size: 16px;
   font-weight: 300;
-  margin: 20px 0 10px;
+  margin: 0 0 10px;
+}
+
+.coord__icon {
+  width: 17px;
+  height: 17px;
+}
+
+.coord__head {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.coords__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.address .coord__meta {
+  line-height: 25px;
+}
+
+.contact__coord, .legals__coord {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 100;
+}
+
+.legals__terms {
+  line-height: 30px;
+  font-weight: 100;
 }
 
 //HOME
@@ -158,11 +206,19 @@ label {
   background-color: #CAA07D;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__flex{
 }
 
 .home .nav {
+  display: flex;
   text-align: center;
-  margin-top: 30%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .home .nav__container {
@@ -252,11 +308,65 @@ header {
 }
 
 //ABOUT
+.career__card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.career__dates {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.career__title {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.career__location {
+  font-weight: 100;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.career__head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.career__link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+}
+
+.career__container {
+  position: relative;
+  background-color: #EBDACB;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
 .about__cta {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+}
+
+.cta__link {
+  font-size: 1.3em;
 }
 
 // FOOTER

@@ -52,7 +52,35 @@
         </section>
         <section class="contact__coords">
             <h3><?= __('Coordonnées', 'prt'); ?></h3>
-
+            <div class="coords__container">
+                <div class="contact__coord mail">
+                    <div class="coord__head">
+                        <h4 class="coord__title"><?= __('Mail', 'prt') ?></h4>
+                        <img src="<?= get_field('mail_icon'); ?>" alt="" class="coord__icon style-svg" width="15px" height="15px">
+                    </div>
+                    <p class="coord__meta">
+                        <a href="mailto:<?= get_field('mail'); ?>" class="coord__link"><?= get_field('mail'); ?></a>
+                    </p>
+                </div>
+                <div class="contact__coord tel">
+                    <div class="coord__head">
+                        <h4 class="coord__title"><?= __('Téléphone', 'prt') ?></h4>
+                        <img src="<?= get_field('phone_icon'); ?>" alt="" class="coord__icon style-svg" width="15px" height="15px">
+                    </div>
+                    <p class="coord__meta"><?= get_field('phone'); ?></p>
+                </div>
+                <div class="contact__coord address">
+                    <div class="coord__head">
+                        <h4 class="coord__title"><?= __('Adresse', 'prt') ?></h4>
+                        <img src="<?= get_field('address_icon'); ?>" alt="" class="coord__icon style-svg" width="15px" height="15px">
+                    </div>
+                    <div class="address">
+                        <p class="coord__meta"><?= get_field('address_name'); ?></p>
+                        <p class="coord__meta"><?= get_field('address_street'); ?></p>
+                        <p class="coord__meta"><?= get_field('address_city'); ?></p>
+                    </div>
+                </div>
+            </div>
         </section>
         </div>
     </main>

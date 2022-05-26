@@ -21,13 +21,13 @@
     </div>
     <nav class="header__nav nav">
         <h2 class="nav__title hidden"><?= __('Navigation principale', 'prt'); ?></h2>
-	    <?php  wp_nav_menu([
-		    'menu' => 'primary',
-		    'container' => false,
-		    'menu_class' => 'nav__container',
-		    'menu_id' => 'navigation',
-		    'walker' => new PrimaryMenuWalker(),
-	    ]); ?>
+        <?php  wp_nav_menu([
+            'menu' => 'primary',
+            'container' => false,
+            'menu_class' => 'nav__container',
+            'menu_id' => 'navigation',
+            'walker' => new PrimaryMenuWalker(),
+        ]); ?>
     </nav>
     <div class="nav__languages">
         <?php foreach (pll_the_languages(['raw' => true]) as $code => $locale) : ?>

@@ -55,7 +55,6 @@ register_post_type('experience', [
 		'singular_name' => 'Parcours professionnel',
 	],
 	'public' => true,
-	'has_archive' => true,
 	'show_ui' => true,
 	'description' => 'Mon parcours professionnel',
 	'menu_position' => 5,
@@ -72,7 +71,6 @@ register_post_type('social', [
         'singular_name' => 'Réseau social',
     ],
     'public' => true,
-    'has_archive' => true,
     'show_ui' => true,
     'description' => 'Mes réseaux sociaux',
     'menu_position' => 5,
@@ -114,6 +112,32 @@ function prt_get_projects($count = 10) {
     return $projects;
 }
 
+// Récupérer les réseaux sociaux via une requête Wordpress
+function prt_get_socials()
+{
+	// 1. on instancie l'objet WP_Query
+	$socials = new PRT_CustomSearchQuery([
+		'post_type' => 'social',
+		'order' => 'DESC',
+	]);
+
+	// 2. on retourne l'objet WP_Query
+	return $socials;
+}
+
+// Récupérer mon parcours professionnel via une requête Wordpress
+function prt_get_exp()
+{
+	// 1. on instancie l'objet WP_Query
+	$exp = new PRT_CustomSearchQuery([
+		'post_type' => 'experience',
+		'order' => 'ASC',
+	]);
+
+	// 2. on retourne l'objet WP_Query
+	return $exp;
+}
+
 // Enregistrer les zones de menus
 register_nav_menu('primary', 'Navigation principale (haut de page)');
 
@@ -144,13 +168,6 @@ function prt_get_menu_items($location)
         if(! $item->isSubItem()) {
             $items[] = $item;
             continue;
-        }
-
-        // Ajouter $item comme "enfant" de l'item parent.
-        foreach($items as $parent) {
-            if(! $parent->isParentFor($item)) continue;
-
-            $parent->addSubItem($item);
         }
     }
 
@@ -214,44 +231,6 @@ function prt_include(string $partial, array $variables = [])
     include(__DIR__ . '/partials/' . $partial . '.php');
 }
 
-// Récupérer les réseaux sociaux via une requête Wordpress
-function prt_get_socials()
-{
-	// 1. on instancie l'objet WP_Query
-	$socials = new PRT_CustomSearchQuery([
-		'post_type' => 'social',
-		'order' => 'DESC',
-	]);
-
-//var_dump($socials);die();
-	// 2. on retourne l'objet WP_Query
-	return $socials;
-}
-
-// Récupérer le parcours via une requête Wordpress
-function prt_get_careers()
-{
-	// 1. on instancie l'objet WP_Query
-	$careers = new PRT_CustomSearchQuery([
-		'post_type' => 'experience',
-		'order' => 'DESC',
-	]);
-
-	// 2. on retourne l'objet WP_Query
-	return $careers;
-}
-
-function prt_get_exp()
-{
-	// 1. on instancie l'objet WP_Query
-	$exp = new PRT_CustomSearchQuery([
-		'post_type' => 'experience',
-		'order' => 'DESC',
-	]);
-
-	// 2. on retourne l'objet WP_Query
-	return $exp;
-}
 // Fonction qui charge les assets compilés et retourne leur chemin absolu
 function prt_mix($path)
 {
