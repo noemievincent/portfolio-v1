@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2022-05-26 15:45+0200\n"
-"PO-Revision-Date: 2022-05-26 15:45+0200\n"
+"POT-Creation-Date: 2022-05-27 18:52+0200\n"
+"PO-Revision-Date: 2022-05-27 18:52+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: fr_BE\n"
@@ -14,6 +14,18 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: Forms/Validators/AcceptedValidator.php:8
+msgid "Veuillez cocher la case ci-dessus pour continuer."
+msgstr "Veuillez cocher la case ci-dessus pour continuer."
+
+#: Forms/Validators/EmailValidator.php:8
+msgid "Merci de fournir une adresse mail valide."
+msgstr "Merci de fournir une adresse mail valide."
+
+#: Forms/Validators/RequiredValidator.php:7
+msgid "Ce champ ne peut pas être vide."
+msgstr "Ce champ ne peut pas être vide."
 
 #: archive-project.php:5
 msgid "Mes projets"
@@ -79,11 +91,11 @@ msgstr "adresse e-mail"
 msgid "message"
 msgstr "message"
 
-#: template-contact.php:39
-msgid "conditions générals d’utilisations"
-msgstr "conditions générals d’utilisations"
+#: template-contact.php:40
+msgid "conditions générales d’utilisations"
+msgstr "conditions générales d’utilisations"
 
-#: template-contact.php:39
+#: template-contact.php:40
 msgid "J’accepte les :conditions"
 msgstr "J’accepte les :conditions"
 

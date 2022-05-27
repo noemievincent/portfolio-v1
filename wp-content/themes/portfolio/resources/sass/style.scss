@@ -51,6 +51,16 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  color: #FFFFFF;
+  background: #B1CADF;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #FFFFFF;
+  background: #B1CADF;
+}
+
 .info {
   position: absolute;
   left: 25px;
@@ -169,11 +179,17 @@ form {
 }
 
 input[type=text], input[type=email], textarea {
+  font-family: museo-sans, sans-serif;
   background-color: #FDFAF7;
   border: 1px solid #CAA07D;
+  color: #3D3329;
   border-radius: 20px;
   min-height: 30px;
   padding-left: 12px;
+}
+
+textarea {
+  padding-top: 10px;
 }
 
 ::placeholder {
@@ -182,10 +198,32 @@ input[type=text], input[type=email], textarea {
   font-weight: 100;
 }
 
+.form__error {
+  font-size: 14px;
+  color: #B42511;
+  //margin-left: 10px;
+  margin-bottom: 3px;
+}
+
+.form__title {
+  font-size: 18px;
+}
+
+.form__error + input[type=text], .form__error + input[type=email], .form__error + textarea {
+  background-color: #F2DAD5;
+  border-color: #B42511;
+}
+
 label {
   font-size: 16px;
   font-weight: 300;
-  margin: 0 0 10px;
+  margin: 0 0 7px;
+}
+
+.form__label:before {
+  //content: "•";
+  content: "—";
+  margin-right: 10px;
 }
 
 .coord__icon {
@@ -296,7 +334,6 @@ label {
 .home footer {
   background-color: transparent;
 }
-
 
 // NAVIGATION
 header {

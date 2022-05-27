@@ -7,38 +7,38 @@
         <section class="contact__form">
             <h3><?= __('Formulaire de contact', 'prt'); ?></h3>
             <?php if(! isset($_SESSION['contact_form_feedback']) || ! $_SESSION['contact_form_feedback']['success']) : ?>
-                <form action="<?= get_home_url(); ?>/wp-admin/admin-post.php" method="POST" class="form" id="contact">
+                <form action="<?= substr(get_home_url(), 0, -2); ?>/wp-admin/admin-post.php" method="POST" class="form" id="contact">
                     <?php if(isset($_SESSION['contact_form_feedback'])) : ?>
-                        <p><?= __('Oups ! Il y a des erreurs dans le formulaire', 'prt') ?></p>
+                        <p class="form__error form__title"><?= __('Oups ! Il y a des erreurs dans le formulaire', 'prt') ?></p>
                     <?php endif; ?>
                     <div class="flex">
                         <div class="form__field">
                             <label for="firstname" class="form__label"><?= __('prénom', 'prt') ?></label>
-                            <input type="text" size="5" name="firstname" id="firstname" placeholder="Lucie" class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
                             <?= prt_get_contact_field_error('firstname'); ?>
+                            <input type="text" size="5" name="firstname" id="firstname" placeholder="Lucie" class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
                         </div>
                         <div class="form__field">
                             <label for="lastname" class="form__label"><?= __('nom', 'prt') ?></label>
-                            <input type="text" size="5" name="lastname" id="lastname" placeholder="Breton" class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
                             <?= prt_get_contact_field_error('lastname'); ?>
+                            <input type="text" size="5" name="lastname" id="lastname" placeholder="Breton" class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
                         </div>
                     </div>
                     <div class="form__field">
                         <label for="email" class="form__label"><?= __('adresse e-mail', 'prt') ?></label>
-                        <input type="email" name="email" id="email" placeholder="lucie-breton@gmail.com" class="form__input" value="<?= prt_get_contact_field_value('email'); ?>">
                         <?= prt_get_contact_field_error('email'); ?>
+                        <input type="email" name="email" id="email" placeholder="lucie-breton@gmail.com" class="form__input" value="<?= prt_get_contact_field_value('email'); ?>">
                     </div>
                     <div class="form__field">
                         <label for="message" class="form__label"><?= __('message', 'prt') ?></label>
-                        <textarea name="message" id="message" cols="30" rows="12" class="form__input"><?= prt_get_contact_field_value('message'); ?></textarea>
                         <?= prt_get_contact_field_error('message'); ?>
+                        <textarea name="message" id="message" cols="30" rows="12" class="form__input" placeholder="Bonjour,..."><?= prt_get_contact_field_value('message'); ?></textarea>
                     </div>
                     <div class="form__field">
+                        <?= prt_get_contact_field_error('rules'); ?>
                         <label for="rules" class="form__checkbox">
                             <input type="checkbox" name="rules" id="rules" value="1" />
-                            <span class="form__checklabel"><?= str_replace(':conditions', '<a href="#">' . __('conditions générals d’utilisations', 'prt') . '</a>', __('J’accepte les :conditions', 'prt')) ?></span>
+                            <span class="form__checklabel"><?= str_replace(':conditions', '<a href="#">' . __('conditions générales d’utilisations', 'prt') . '</a>', __('J’accepte les :conditions', 'prt')) ?></span>
                         </label>
-                        <?= prt_get_contact_field_error('rules'); ?>
                     </div>
                     <div class="form__actions">
                         <?php wp_nonce_field('nonce_submit_contact'); ?>
@@ -47,7 +47,7 @@
                     </div>
                 </form>
             <?php else : ?>
-            <p id="contact"><?= __('Merci ! Votre message a bien été envoyé.', 'prt') ?></p>
+            <p id="contact" class="form__success"><?= __('Merci ! Votre message a bien été envoyé.', 'prt') ?></p>
             <?php unset($_SESSION['contact_form_feedback']); endif; ?>
         </section>
         <section class="contact__coords">
