@@ -1,5 +1,5 @@
-    <footer class="footer">
-        <h2 class="footer__title hidden"><?= __('Pied de page', 'prt'); ?></h2>
+    <footer class="footer" aria-labelledby="footer">
+        <h2 class="footer__title hidden" id="footer" aria-level="2"><?= __('Pied de page', 'prt'); ?></h2>
         <a href="<?= get_home_url(); ?>">Noémie Vincent - 2022</a>
         <div class="footer__right">
             <a href="<?= get_the_permalink(prt_get_template_page('template-legals')); ?>"><?= __('mentions légales', 'prt'); ?></a>
