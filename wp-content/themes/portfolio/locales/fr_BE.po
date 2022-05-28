@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2022-05-27 18:52+0200\n"
-"PO-Revision-Date: 2022-05-27 18:52+0200\n"
+"POT-Creation-Date: 2022-05-28 11:49+0200\n"
+"PO-Revision-Date: 2022-05-28 12:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: fr_BE\n"
@@ -31,6 +31,10 @@ msgstr "Ce champ ne peut pas être vide."
 msgid "Mes projets"
 msgstr "Mes projets"
 
+#: archive-project.php:10
+msgid "Il n’y a pas de projets à vous présenter..."
+msgstr "Il n’y a pas de projets à vous présenter..."
+
 #: footer.php:2
 msgid "Pied de page"
 msgstr "Pied de page"
@@ -46,6 +50,19 @@ msgstr "Accueil"
 #: header.php:23
 msgid "Navigation principale"
 msgstr "Navigation principale"
+
+#: partials/project.php:5 partials/project.php:8
+msgid "Voir le projet :title"
+msgstr "Voir le projet :title"
+
+#: single-project.php:6
+#| msgid "Mes projets"
+msgid "Retour aux projets"
+msgstr "Retour aux projets"
+
+#: single-project.php:13
+msgid "Visiter le projet"
+msgstr "Visiter le projet"
 
 #: template-about.php:7
 msgid "Qui suis-je ?"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2022-05-27 18:47+0200\n"
-"PO-Revision-Date: 2022-05-27 18:48+0200\n"
+"POT-Creation-Date: 2022-05-28 11:48+0200\n"
+"PO-Revision-Date: 2022-05-28 11:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: en_US\n"
@@ -31,6 +31,10 @@ msgstr "This field cannot be empty."
 msgid "Mes projets"
 msgstr "Projects"
 
+#: archive-project.php:10
+msgid "Il n’y a pas de projets à vous présenter..."
+msgstr "There are no projects to present to you…"
+
 #: footer.php:2
 msgid "Pied de page"
 msgstr "Footer"
@@ -46,6 +50,18 @@ msgstr "Home"
 #: header.php:23
 msgid "Navigation principale"
 msgstr "Main navigation"
+
+#: partials/project.php:5 partials/project.php:8
+msgid "Voir le projet :title"
+msgstr "See :title project"
+
+#: single-project.php:6
+msgid "Retour aux projets"
+msgstr "Back to projects"
+
+#: single-project.php:13
+msgid "Visiter le projet"
+msgstr "Visit project"
 
 #: template-about.php:7
 msgid "Qui suis-je ?"
@@ -130,3 +146,9 @@ msgstr "Legal information"
 #: template-legals.php:40
 msgid "Clause de confidentialité"
 msgstr "Confidentiality clause"
+
+#~ msgid "Ceci est un test"
+#~ msgstr "This is a test"
+
+#~ msgid "Test"
+#~ msgstr "Test ok"

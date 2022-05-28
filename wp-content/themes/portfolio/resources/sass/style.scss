@@ -127,8 +127,7 @@ h2 {
   font-family: montserrat, sans-serif;
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 20px;
-  //margin: 40px 0;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -357,8 +356,12 @@ header {
   align-items: center;
 }
 
-.nav__item--current, .nav__locale--current {
+.nav__item--current, .nav__locale--current, .main .nav__item:hover {
   font-weight: 700;
+}
+
+.main .nav__item {
+  transition: font-weight 0.3s ease-in-out;
 }
 
 .nav__languages {
@@ -429,6 +432,12 @@ header {
   margin-top: 20px;
 }
 
+.about__content {
+  font-weight: 100;
+  line-height: 25px;
+  max-width: 430px;
+}
+
 .about__cta {
   display: flex;
   flex-direction: column;
@@ -487,6 +496,7 @@ footer{
 .projects__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: 80px;
   justify-items: center;
 }
@@ -494,6 +504,7 @@ footer{
 .project__nav {
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
 
 a[rel="prev"] {
@@ -574,4 +585,25 @@ a[rel="next"] {
   background-size: 40px;
   padding-left: 65px;
   text-transform: unset;
+}
+
+.singleProject__container {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.singleProject__link {
+  align-self: center;
+}
+
+.singleProject__content {
+  font-weight: 100;
+  line-height: 25px;
+  margin: 0 100px;
+}
+
+.singleProject__fig {
+  text-align: center;
 }

@@ -242,6 +242,7 @@ function prt_mix($path) {
 	return get_stylesheet_directory_uri() . '/public' . $manifest[$path];
 }
 
+
 //Ajouter les liens de navigations transversales entre les projets
 function prt_previous_post_link(string $post_type) {
 	if( get_adjacent_post(false, '', true) ) {

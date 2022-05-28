@@ -2,11 +2,11 @@
 <?php get_header(); ?>
     <main class="layout about">
         <h2 class="about__title"><?= get_the_title(); ?></h2>
-        <div class="about__content has-2-columns">
+        <div class="about__container has-2-columns">
             <section class="about__presentation">
                 <h3><?= __('Qui suis-je ?', 'prt'); ?></h3>
                 <div class="about__content">
-
+	                <?= get_the_content(); ?>
                 </div>
             </section>
             <div class="about__right">

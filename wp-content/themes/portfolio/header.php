@@ -16,8 +16,6 @@
         <div class="homepage__logo">
             <a href="<?= home_url() ?>" class="homepage__link"><?= __('Accueil', 'prt'); ?></a>
         </div>
-        <?php if (is_home()): ?>
-        <?php endif; ?>
     </div>
     <nav class="header__nav nav">
         <h2 class="nav__title hidden"><?= __('Navigation principale', 'prt'); ?></h2>
