@@ -37,7 +37,7 @@
                         <?= prt_get_contact_field_error('rules'); ?>
                         <label for="rules" class="form__checkbox">
                             <input type="checkbox" name="rules" id="rules" value="1" />
-                            <span class="form__checklabel"><?= str_replace(':conditions', '<a href="#">' . __('conditions générales d’utilisations', 'prt') . '</a>', __('J’accepte les :conditions', 'prt')) ?></span>
+                            <span class="form__checklabel"><?= str_replace(':conditions', '<a href="' . get_the_permalink(prt_get_template_page('template-legals')) . '">' . __('conditions générales d’utilisations', 'prt') . '</a>', __('J’accepte les :conditions', 'prt')) ?></span>
                         </label>
                     </div>
                     <div class="form__actions">

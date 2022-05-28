@@ -213,6 +213,11 @@ textarea {
   border-color: #B42511;
 }
 
+.form__checklabel a {
+  //font-weight: 500;
+  color: #7DA7CA;
+}
+
 label {
   font-size: 16px;
   font-weight: 300;
@@ -356,7 +361,7 @@ header {
   align-items: center;
 }
 
-.nav__item--current, .nav__locale--current, .main .nav__item:hover {
+.nav__item--current, .nav__locale--current {
   font-weight: 700;
 }
 
