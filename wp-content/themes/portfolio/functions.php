@@ -241,3 +241,24 @@ function prt_mix($path) {
 	// Récupérer & retourner le chemin versionné
 	return get_stylesheet_directory_uri() . '/public' . $manifest[$path];
 }
+
+//Ajouter les liens de navigations transversales entre les projets
+function prt_previous_post_link(string $post_type) {
+	if( get_adjacent_post(false, '', true) ) {
+		previous_post_link('%link', '%title');
+	} else {
+		$first = new WP_Query('post_type=project&posts_per_page=1&order=DESC'); $first->the_post();
+		echo '<a href="' . get_permalink() . '" rel="prev">' . get_the_title() .'</a>';
+		wp_reset_query();
+	};
+}
+
+function prt_next__post_link(string $post_type) {
+	if( get_adjacent_post(false, '', false) ) {
+		next_post_link('%link', '%title');
+	} else {
+		$last = new WP_Query('post_type=project&posts_per_page=1&order=ASC'); $last->the_post();
+		echo '<a href="' . get_permalink() . '" rel="next">' . get_the_title() .'</a>';
+		wp_reset_query();
+	};
+}
