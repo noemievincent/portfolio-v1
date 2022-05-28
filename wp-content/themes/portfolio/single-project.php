@@ -3,7 +3,7 @@
     <main class="singleProject">
         <section class="singleProject__header" aria-labelledby="singleProject">
             <a href="<?= get_post_type_archive_link('project') ?>"
-               class="singleProject__return"><?= __('Retour aux projets', 'prt') ?></a>
+               class="singleProject__return full__link"><?= __('Retour aux projets', 'prt') ?></a>
             <h2 class="singleProject__title" id="singleProject" aria-level="2"><?= get_the_title(); ?></h2>
         </section>
         <div class="singleProject__container">

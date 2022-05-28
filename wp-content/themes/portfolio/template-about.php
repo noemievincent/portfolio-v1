@@ -17,7 +17,7 @@
 							<?php if (($exp = prt_get_exp())->have_posts()):while ($exp->have_posts()): $exp->the_post(); ?>
                                 <div class="career__container">
                                     <a href="<?= get_field('location_url') ?>"
-                                       class="career__link"><?= str_replace(':name', get_field('location_name'), __('Se rendre sur le site de l‘:name', 'prt')); ?> </a>
+                                       class="career__link full__link"><?= str_replace(':name', get_field('location_name'), __('Se rendre sur le site de l‘:name', 'prt')); ?> </a>
                                     <div class="career__card">
                                         <figure class="career__fig">
                                             <img src="<?php the_post_thumbnail_url(); ?>"
