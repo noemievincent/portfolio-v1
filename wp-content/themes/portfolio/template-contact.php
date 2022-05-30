@@ -7,7 +7,7 @@
             <section class="contact__form" aria-labelledby="form">
                 <h3 id="form" aria-level="3"><?= __('Formulaire de contact', 'prt'); ?></h3>
 				<?php if ( ! isset($_SESSION['contact_form_feedback']) || ! $_SESSION['contact_form_feedback']['success']) : ?>
-                    <form action="<?= substr(get_home_url(), 0, - 2); ?>/wp-admin/admin-post.php" method="POST"
+                    <form action="<?= substr(get_home_url(), 0, - 2); ?>wp-admin/admin-post.php" method="POST"
                           class="form" id="contact">
 						<?php if (isset($_SESSION['contact_form_feedback'])) : ?>
                             <p class="form__error form__title"><?= __('Oups ! Il y a des erreurs dans le formulaire', 'prt') ?></p>

@@ -1,4 +1,5 @@
 <?php
+
 // Charger les fichiers nécessaires
 require_once(__DIR__ . '/CustomSearchQuery.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuWalker.php');
