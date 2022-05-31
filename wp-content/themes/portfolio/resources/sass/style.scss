@@ -7,8 +7,8 @@ html, body { //1
 }
 
 body { //1
-  //background-color: #F9F3EC;
-  background-color: rgba(220, 255, 191, 0.7);
+  background-color: #F9F3EC;
+  //background-color: rgba(220, 255, 191, 0.7);
   font-family: museo-sans, sans-serif;
   display: grid;
   grid-template-columns: 33% 1fr; /*500px/16*/
@@ -98,12 +98,14 @@ footer { //1
 }
 
 .main { //10
-  //background: url('../../img/main-blob.svg') no-repeat;
+  background-image: url("../../img/main-blob.svg");
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .home { //10
-  //background: url('../../img/home-blob.svg') no-repeat;
+  background-image: url('../../img/home-blob.svg');
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -394,6 +396,7 @@ footer { //1
   display: flex;
   justify-content: space-between;
   margin-top: 3.75em; /*60px/16*/
+  font-size: 1.125em; /*18px/16*/
 }
 
 .burgermenu, .toggle { //10
@@ -592,7 +595,7 @@ a[rel="next"] { //11
 }
 
 
-/*----------------------------TEMPORARY----------------------------*/
+/*-----------------------------------------------------TEMPORARY-----------------------------------------------------*/
 main:before {
   content: "";
   //background-color: rgba(255, 165, 0, 0.3);
@@ -615,12 +618,11 @@ main:after {
   z-index: -1;
 }
 
-/*----------------------------MEDIA QUERIES----------------------------*/
-/*--------------------------------1100px-------------------------------*/
+/*---------------------------------------------------MEDIA QUERIES---------------------------------------------------*/
+/*-------------------------------------------------------1100px------------------------------------------------------*/
 @media (max-width: 1100px) {
-
   body { //1
-    background-color: rgba(255, 191, 202, 0.7);
+    //background-color: rgba(255, 191, 202, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -690,6 +692,9 @@ main:after {
 
   .singleProject__container { //10
     margin: 0;
+  }
+  .singleProject__nav { //10
+    font-size: 1em; /*16px/16*/
   }
 
   .languages { //10
@@ -769,7 +774,6 @@ main:after {
     transition: background-color 0.3s ease-in-out;
   }
 
-  /*------------BURGER MENU------------*/
   .burgermenu { //10
     display: block;
     width: 1.2em; /*24px/20*/
@@ -827,11 +831,10 @@ main:after {
     left: 0;
   }
 }
-
-/*---------------------------------620px-------------------------------*/
+/*--------------------------------------------------------620px------------------------------------------------------*/
 @media (max-width: 620px) {
   body { //1
-    background-color: rgba(205, 191, 255, 0.7);
+    //background-color: rgba(205, 191, 255, 0.7);
   }
 
   main { //1
@@ -848,6 +851,10 @@ main:after {
 
   h3 { //1
     font-size: 1em; /*16px/16*/
+  }
+
+  form { //1
+    font-size: 0.875em; /*14px/16*/
   }
 
   .main { //10
