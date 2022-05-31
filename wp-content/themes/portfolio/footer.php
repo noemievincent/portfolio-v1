@@ -1,4 +1,4 @@
-    <footer class="footer" aria-labelledby="footer">
+<footer class="footer" aria-labelledby="footer">
         <h2 class="footer__title hidden" id="footer" aria-level="2"><?= __('Pied de page', 'prt'); ?></h2>
         <a href="<?= get_home_url(); ?>">Noémie Vincent - 2022</a>
         <div class="footer__right">

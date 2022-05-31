@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Noémie Vincent">
-    <meta name="description" content="Portfolio, Web Designer, Web Developer, Web">
-    <meta name="keywords" content="Portfolio de Noémie Vincent">
+    <meta name="keywords" content="Portfolio, Web Designer, Web Developer, Web">
+    <meta name="description" content="Portfolio de Noémie Vincent">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= wp_title('·', false, 'right') . 'Noémie Vincent'; ?></title>
     <link rel="stylesheet" type="text/css" href="<?= prt_mix('css/style.css'); ?>"/>
