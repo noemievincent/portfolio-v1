@@ -13,7 +13,7 @@
 </head>
 <body class="<?= is_home() ? 'home' : 'main' ?>">
 <header class="header">
-    <input id="toggle" type="checkbox">
+    <input id="toggle" class="toggle" type="checkbox">
     <div class="info">
         <h1 class="header__title hidden" id="header" aria-level="1"><?= get_bloginfo('name'); ?></h1>
         <p class="header__tagline hidden"><?= get_bloginfo('description'); ?></p>
