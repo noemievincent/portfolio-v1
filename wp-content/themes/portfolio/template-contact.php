@@ -36,7 +36,7 @@
                             <label for="message" class="form__label"><?= __('message', 'prt') ?></label>
 							<?= prt_get_contact_field_error('message'); ?>
                             <textarea name="message" id="message" cols="30" rows="12" class="form__input"
-                                      placeholder="Bonjour,..."><?= prt_get_contact_field_value('message'); ?></textarea>
+                                      placeholder="<?= __('Bonjour,...', 'prt') ?>"><?= prt_get_contact_field_value('message'); ?></textarea>
                         </div>
                         <div class="form__field">
 							<?= prt_get_contact_field_error('rules'); ?>

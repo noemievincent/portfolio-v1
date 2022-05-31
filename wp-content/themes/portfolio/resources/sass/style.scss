@@ -418,6 +418,28 @@ footer { //1
   font-size: 0.75em; /*30px/40*/
 }
 
+.error404 { //10
+  padding: 5em 0; /*80px/16*/
+}
+
+.error404__container { //10
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+  font-size: 1.5em; /*24px/16*/
+}
+
+.error404__title { //10
+  font-size: 6.6666666667em; /*160px/24*/
+  margin-bottom: 0.25em; /*40px/160*/
+}
+
+.error404__subtitle { //10
+  font-size: 1.6666666667em; /*40/24*/
+}
+
 input[type=text], input[type=email], textarea { //11
   font-family: museo-sans, sans-serif;
   background-color: #FDFAF7;
@@ -428,7 +450,7 @@ input[type=text], input[type=email], textarea { //11
   padding-left: 0.90000225em; /*12px/13.3333*/
 }
 
-.form__checklabel a { //11
+.form__checklabel a, .error404__link { //11
   //font-weight: 500;
   color: #7DA7CA;
 }
@@ -622,7 +644,7 @@ main:after {
 /*-------------------------------------------------------1100px------------------------------------------------------*/
 @media (max-width: 1100px) {
   body { //1
-    //background-color: rgba(255, 191, 202, 0.7);
+    background-color: rgba(255, 191, 202, 0.7);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -719,8 +741,12 @@ main:after {
     transition: all 0.4s ease-in-out;
   }
 
-  .head__container { //11
+  .head__container { //10
     font-size: 1.25em; /*40px/32*/
+  }
+
+  .error404__container { //10
+    font-size: 1.125em; /*18px/16*/
   }
 
   .home h2 { //11
@@ -834,7 +860,7 @@ main:after {
 /*--------------------------------------------------------620px------------------------------------------------------*/
 @media (max-width: 620px) {
   body { //1
-    //background-color: rgba(205, 191, 255, 0.7);
+    background-color: rgba(205, 191, 255, 0.7);
   }
 
   main { //1
@@ -901,6 +927,10 @@ main:after {
 
   .footer__link { //10
     text-align: end;
+  }
+
+  .error404__container { //10
+    font-size: 1em; /*16px/16*/
   }
 
   .home h2 { //11
