@@ -23,7 +23,7 @@
                                             <img src="<?php the_post_thumbnail_url(); ?>"
                                                  class="career__img <?= get_post_field('post_name', get_post()); ?>"
                                                  alt="<?= get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true) ?>"
-                                                 height="94px" width="62px">
+                                                 height="94" width="62">
                                         </figure>
                                         <div class="career__head">
                                             <div class="career__dates">

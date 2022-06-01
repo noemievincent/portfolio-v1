@@ -62,8 +62,8 @@
                     <div class="contact__coord mail">
                         <div class="coord__head">
                             <h4 class="coord__title" aria-level="4"><?= __('Mail', 'prt') ?></h4>
-                            <img src="<?= get_field('mail_icon'); ?>" alt="" class="coord__icon style-svg" width="15px"
-                                 height="15px">
+                            <img src="<?= get_field('mail_icon'); ?>" alt="" class="coord__icon style-svg" width="15"
+                                 height="15">
                         </div>
                         <p class="coord__meta" itemprop="email">
                             <a href="mailto:<?= get_field('mail'); ?>" class="coord__link"><?= get_field('mail'); ?></a>
@@ -72,8 +72,8 @@
                     <div class="contact__coord tel">
                         <div class="coord__head">
                             <h4 class="coord__title" aria-level="4"><?= __('Téléphone', 'prt') ?></h4>
-                            <img src="<?= get_field('phone_icon'); ?>" alt="" class="coord__icon style-svg" width="15px"
-                                 height="15px">
+                            <img src="<?= get_field('phone_icon'); ?>" alt="" class="coord__icon style-svg" width="15"
+                                 height="15">
                         </div>
                         <p class="coord__meta" itemprop="telephone"><?= get_field('phone'); ?></p>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="coord__head">
                             <h4 class="coord__title" aria-level="4"><?= __('Adresse', 'prt') ?></h4>
                             <img src="<?= get_field('address_icon'); ?>" alt="" class="coord__icon style-svg"
-                                 width="15px" height="15px">
+                                 width="15" height="15">
                         </div>
                         <div class="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <p class="coord__meta" itemprop="name"><?= get_field('address_name'); ?></p>

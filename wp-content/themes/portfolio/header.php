@@ -11,7 +11,7 @@
     <script type="text/javascript" src="<?= prt_mix('js/script.js'); ?>"></script>
 	<?php wp_head(); ?>
 </head>
-<body class="<?= is_home() ? 'home' : 'main' ?>">
+<body class="<?= is_home() ? 'home' : 'main'?>">
 <header class="header">
     <input id="toggle" class="toggle" type="checkbox">
     <div class="info">

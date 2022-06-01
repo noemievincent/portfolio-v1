@@ -43,6 +43,10 @@ a { //1
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: solid;
+}
+
 ::selection { //1
   color: #FFFFFF;
   background: #B1CADF;
