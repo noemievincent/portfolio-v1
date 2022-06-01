@@ -1,6 +1,7 @@
 <?php
 
 // Charger les fichiers nécessaires
+require_once(__DIR__ . '/acf.php');
 require_once(__DIR__ . '/CustomSearchQuery.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuWalker.php');
 require_once(__DIR__ . '/Menus/PrimaryMenuItem.php');
@@ -15,9 +16,9 @@ require_once(__DIR__ . '/Forms/Validators/EmailValidator.php');
 require_once(__DIR__ . '/Forms/Validators/AcceptedValidator.php');
 
 // Lancer la sessions PHP pour pouvoir passer des variables de page en page
-add_action('init', 'dw_boot_theme', 1);
+add_action('init', 'prt_boot_theme', 1);
 
-function dw_boot_theme() {
+function prt_boot_theme() {
 	load_theme_textdomain('prt', __DIR__ . '/locales');
 
 	if ( ! session_id()) {
