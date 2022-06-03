@@ -4,6 +4,10 @@ class PRT_Controller {
     }
 
     run() {
+        this.drawProjectsBG();
+    }
+
+    drawProjectsBG() {
         this.blobs = document.querySelectorAll('.project__svg');
         this.blobs.forEach((blob) => {
             this.angle = -360 +  Math.random() * (360 - (-360));

@@ -944,9 +944,14 @@ main:after {
     font-size: 0.8em; /*16px/20*/
   }
 
+  .projects__list { //10
+    margin: auto;
+    width: 16.25em; /*260px/16*/
+  }
+
   .projects__container { //10
     display: flex;
-    overflow-y: hidden;
+    flex-direction: column;
     padding: 1.25em 1.25em 3.125em 1.25em; /*1.25em/16 20px/16 50px/16 20px/16*/
   }
 
