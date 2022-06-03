@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= wp_title('·', false, 'right') . 'Noémie Vincent'; ?></title>
     <link rel="stylesheet" type="text/css" href="<?= prt_mix('css/style.css'); ?>"/>
-    <script type="text/javascript" src="<?= prt_mix('js/script.js'); ?>"></script>
 	<?php wp_head(); ?>
 </head>
 <body class="<?= is_home() ? 'home' : 'main'?>">

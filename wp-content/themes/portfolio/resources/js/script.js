@@ -1,13 +1,16 @@
-class DW_Controller {
+class PRT_Controller {
     constructor() {
-        // Ici, le DOM n'est pas encore prêt
-        // Pour le moment, rien à faire
+
     }
 
     run() {
-        // Ici, le DOM est prêt
+        this.blobs = document.querySelectorAll('.project__svg');
+        this.blobs.forEach((blob) => {
+            this.angle = -360 +  Math.random() * (360 - (-360));
+            blob.style.transform = `rotate(${this.angle}deg)`;
+        })
     }
 }
 
-window.dw = new DW_Controller();
-window.addEventListener('load', () => window.dw.run());
+const script = new PRT_Controller();
+window.addEventListener('load', () => script.run());
