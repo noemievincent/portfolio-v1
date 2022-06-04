@@ -4,6 +4,8 @@ class PRT_Controller {
     }
 
     run() {
+        document.documentElement.classList.remove('js-disabled');
+        document.documentElement.classList.add('js-enabled');
         this.drawProjectsBG();
     }
 

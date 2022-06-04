@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="js-disabled">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Noémie Vincent">
