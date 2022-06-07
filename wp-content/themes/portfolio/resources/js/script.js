@@ -1,6 +1,5 @@
 class PRT_Controller {
     constructor() {
-
     }
 
     run() {

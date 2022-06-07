@@ -95,5 +95,6 @@
             </section>
         </div>
     </main>
+    <?php unset($_SESSION['contact_form_feedback']) ?>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>
