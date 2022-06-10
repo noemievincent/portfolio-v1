@@ -5,7 +5,7 @@
         <img src="<?= get_field('icon'); ?>" alt="<?= str_replace(':title', get_the_title(), __('Voir le projet :title', 'prt')); ?>" class="project__icon style-svg">
 	</div>
     <div class="project__background">
-        <svg version="1.1" class="project__svg" id="<?= get_post_field('post_name'); ?>" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg version="1.1" class="project__svg" id="inline-<?= get_post_field('post_name'); ?>" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 180 190.6" style="enable-background:new 0 0 180 190.6;" xml:space="preserve">
         <style type="text/css">
             .<?= get_post_field('post_name'); ?>{fill:<?= get_field('css_color') ?>;}

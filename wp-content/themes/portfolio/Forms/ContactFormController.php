@@ -55,7 +55,7 @@ class ContactFormController extends BaseFormController
         ]);
 
         // Envoyer l'email à l'admin
-        wp_mail(get_bloginfo('admin_email'), 'Nouveau message de ' . $this->data['firstname'] . ' ' . $this->data['lastname'], $this->data['message']);
+        wp_mail(get_bloginfo('admin_email'), 'Nouveau message de ' . $this->data['firstname'] . ' ' . $this->data['lastname'] . ' ('. $this->data['email'] .')', $this->data['message']);
     }
 
     protected function redirectWithSuccess()
