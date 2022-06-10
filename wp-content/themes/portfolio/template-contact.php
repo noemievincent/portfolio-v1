@@ -6,55 +6,55 @@
         <div class="contact__content has-2-columns">
             <section class="contact__form" aria-labelledby="form">
                 <h3 id="form" aria-level="3"><?= __('Formulaire de contact', 'prt'); ?></h3>
-				<?php if ( ! isset($_SESSION['contact_form_feedback']) || ! $_SESSION['contact_form_feedback']['success']) : ?>
-                    <form action="<?= substr(get_home_url(), 0, - 2); ?>wp-admin/admin-post.php" method="POST"
+                <?php if (!isset($_SESSION['contact_form_feedback']) || !$_SESSION['contact_form_feedback']['success']) : ?>
+                    <form action="<?= substr(get_home_url(), 0, -2); ?>wp-admin/admin-post.php" method="POST"
                           class="form" id="contact">
-						<?php if (isset($_SESSION['contact_form_feedback'])) : ?>
+                        <?php if (isset($_SESSION['contact_form_feedback'])) : ?>
                             <p class="form__error form__title"><?= __('Oups ! Il y a des erreurs dans le formulaire', 'prt') ?></p>
-						<?php endif; ?>
+                        <?php endif; ?>
                         <div class="flex">
                             <div class="form__field">
                                 <label for="firstname" class="form__label"><?= __('prénom', 'prt') ?></label>
-								<?= prt_get_contact_field_error('firstname'); ?>
+                                <?= isset($_SESSION['contact_form_feedback']['errors']['firstname']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['firstname'] . '</p>' : '' ?>
                                 <input type="text" size="5" name="firstname" id="firstname" placeholder="Lucie"
                                        class="form__input" value="<?= prt_get_contact_field_value('firstname'); ?>">
                             </div>
                             <div class="form__field">
                                 <label for="lastname" class="form__label"><?= __('nom', 'prt') ?></label>
-								<?= prt_get_contact_field_error('lastname'); ?>
+                                <?= isset($_SESSION['contact_form_feedback']['errors']['lastname']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['lastname'] . '</p>' : '' ?>
                                 <input type="text" size="5" name="lastname" id="lastname" placeholder="Breton"
                                        class="form__input" value="<?= prt_get_contact_field_value('lastname'); ?>">
                             </div>
                         </div>
                         <div class="form__field">
                             <label for="email" class="form__label"><?= __('adresse e-mail', 'prt') ?></label>
-							<?= prt_get_contact_field_error('email'); ?>
+                            <?= isset($_SESSION['contact_form_feedback']['errors']['email']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['email'] . '</p>' : '' ?>
                             <input type="email" name="email" id="email" placeholder="lucie-breton@gmail.com"
                                    class="form__input" value="<?= prt_get_contact_field_value('email'); ?>">
                         </div>
                         <div class="form__field">
                             <label for="message" class="form__label"><?= __('message', 'prt') ?></label>
-							<?= prt_get_contact_field_error('message'); ?>
+                            <?= isset($_SESSION['contact_form_feedback']['errors']['message']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['message'] . '</p>' : '' ?>
                             <textarea name="message" id="message" cols="30" rows="12" class="form__input"
                                       placeholder="<?= __('Bonjour,...', 'prt') ?>"><?= prt_get_contact_field_value('message'); ?></textarea>
                         </div>
                         <div class="form__field">
-							<?= prt_get_contact_field_error('rules'); ?>
+                            <?= isset($_SESSION['contact_form_feedback']['errors']['rules']) ? '<p class="form__error">' . $_SESSION['contact_form_feedback']['errors']['rules'] . '</p>' : '' ?>
                             <label for="rules" class="form__checkbox">
                                 <input type="checkbox" name="rules" id="rules" value="1"/>
                                 <span class="form__checklabel"><?= str_replace(':conditions', '<a href="' . get_the_permalink(prt_get_template_page('template-legals')) . '">' . __('conditions générales d’utilisations', 'prt') . '</a>', __('J’accepte les :conditions', 'prt')) ?></span>
                             </label>
                         </div>
                         <div class="form__actions">
-							<?php wp_nonce_field('nonce_submit_contact'); ?>
+                            <?php wp_nonce_field('nonce_submit_contact'); ?>
                             <input type="hidden" name="action" value="submit_contact_form"/>
                             <button class="form__button btn" type="submit"><?= __('Envoyer', 'prt') ?></button>
                         </div>
                     </form>
-				<?php else : ?>
+                <?php else : ?>
                     <p id="contact"
                        class="form__success"><?= __('Merci ! Votre message a bien été envoyé.', 'prt') ?></p>
-					<?php unset($_SESSION['contact_form_feedback']); endif; ?>
+                    <?php unset($_SESSION['contact_form_feedback']);endif; ?>
             </section>
             <section class="contact__coords" aria-labelledby="coords">
                 <h3 id="coords" aria-level="3"><?= __('Coordonnées', 'prt'); ?></h3>

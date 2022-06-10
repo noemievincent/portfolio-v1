@@ -21,6 +21,7 @@ add_action('init', 'prt_boot_theme', 1);
 function prt_boot_theme() {
 	load_theme_textdomain('prt', __DIR__ . '/locales');
 
+
 	if ( ! session_id()) {
 		session_start();
 	}
@@ -170,6 +171,7 @@ function prt_get_menu_items($location) {
 
 // Gérer l'envoi de formulaire personnalisé
 add_action('admin_post_submit_contact_form', 'prt_handle_submit_contact_form');
+add_action('admin_post_nopriv_submit_contact_form', 'prt_handle_submit_contact_form');
 
 function prt_handle_submit_contact_form() {
 	// Instancier le controlleur du formulaire
