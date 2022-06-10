@@ -83,11 +83,6 @@ form { //1
   max-width: 28.75em; /*460px/16*/
 }
 
-form:before {
-  content: "!!! Le formulaire n'est pas encore fonctionnel !!!";
-  color: #C92C2C;
-}
-
 textarea { //1
   padding-top: 0.750001875em; /*10px/13.3333*/
 }
@@ -407,7 +402,7 @@ label { //1
 .singleProject__content { //10
   font-weight: 100;
   line-height: 1.5625em; /*25px/16*/
-  //margin: 0 6.25em; /*100px/16*/
+  margin: 0 12.5em; /*100px/16*/
 }
 
 .singleProject__fig { //10
@@ -765,7 +760,7 @@ main:after {
   }
 
   .singleProject__content { //10
-    margin: 0;
+    margin: 0 6.25em; /*100px/16*/
   }
 
   .singleProject__container { //10
@@ -996,6 +991,10 @@ main:after {
   .singleProject__nav { //10
     font-size: 0.875em; /*14px/16*/
     margin-top: 1.25em; /*20px/16*/
+  }
+
+  .singleProject__content { //10
+    margin: 0;
   }
 
   .footer__right { //10

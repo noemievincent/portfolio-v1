@@ -7,9 +7,9 @@
             <h2 class="singleProject__title" id="singleProject" aria-level="2"><?= get_the_title(); ?></h2>
         </section>
         <div class="singleProject__container">
-            <div class="singleProject__content">
-				<?php the_content(); ?>
-            </div>
+            <p class="singleProject__content">
+				<?= get_the_content(); ?>
+            </p>
             <a href="<?= get_field('link'); ?>"
                class="singleProject__link btn"><?= __('Visiter le projet', 'prt') ?></a>
             <figure class="singleProject__fig">
