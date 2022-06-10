@@ -25,6 +25,7 @@
                 <span class="top-bun"></span>
                 <span class="meat"></span>
                 <span class="bottom-bun"></span>
+                <span class="hidden">Ouvrir le menu</span>
             </label>
         </div>
     </div>

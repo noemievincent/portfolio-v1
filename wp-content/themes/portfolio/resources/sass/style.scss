@@ -64,6 +64,11 @@ h3 { //1
 a { //1
   color: #3D3329;
   text-decoration: none;
+  transition: all ease-in-out 0.2s;
+}
+
+a:hover, a:focus {
+  color: #7DA7CA;
 }
 
 ::selection { //1
@@ -654,6 +659,7 @@ a[rel="next"] { //11
 
 .home .nav__link:hover, .home .nav__link:focus { //30
   background-color: #F3EAE2;
+  color: #3D3329;
   cursor: pointer;
 }
 
@@ -886,6 +892,18 @@ main:after {
     border-radius: 0.15em; /*3px/20*/
     background-color: #3D3329;
     transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .toggle:checked + .info .hamburger .top-bun { //50
