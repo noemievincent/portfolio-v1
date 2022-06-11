@@ -4,6 +4,7 @@
 !package.json
 !package-lock.json
 !webpack.mix.js
+!readme-img
 
 !/wp-content
 /wp-content/*
