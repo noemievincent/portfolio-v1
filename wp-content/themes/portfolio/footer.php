@@ -8,7 +8,7 @@
             <?php if (($socials = prt_get_socials())->have_posts()):while ($socials->have_posts()): $socials->the_post(); ?>
                 <li class="footer__item">
                     <figure class="footer__fig">
-                        <a href="<?= get_field('url') ?>" class="footer__link">
+                        <a href="<?= get_field('url') ?>" class="footer__link" target="_blank">
                             <img src="<?php the_post_thumbnail_url(); ?>"
                                  class="footer__img style-svg <?= get_post_field('post_name', get_post()); ?>"
                                  alt="<?= get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true) ?>">

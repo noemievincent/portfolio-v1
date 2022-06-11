@@ -11,7 +11,7 @@
 				<?= get_the_content(); ?>
             </p>
             <a href="<?= get_field('link'); ?>"
-               class="singleProject__link btn"><?= __('Visiter le projet', 'prt') ?></a>
+               class="singleProject__link btn" target="_blank"><?= __('Visiter le projet', 'prt') ?></a>
             <figure class="singleProject__fig">
 				<?= get_the_post_thumbnail(null, 'medium_large', ['class' => 'singleProject__thumb']); ?>
             </figure>
