@@ -1,11 +1,52 @@
 # Portfolio
 
-> Projet dans le cadre du cours de Design Web
+> lien vers le [site](https://noemie-vincent.be/fr/) et le [prototype](https://www.figma.com/file/CWqutSiFXm1OEDfcrmsMdy/Portfolio?node-id=51%3A2) (figma)
 
-- lien vers le [prototype](https://www.figma.com/file/CWqutSiFXm1OEDfcrmsMdy/Portfolio?node-id=51%3A2)
-- lien vers le [site](https://noemie-vincent.be/fr/)
+### PUBLIC CIBLE
 
-## Informations importantes
-**SUR LE FORMULAIRE :**
-- lors de la mise en ligne (et c'est le même cas sur la version locale), je me suis rendue compte que la validation du formulaire ne fonctionne que lors que l'admin WordPress est connecté.
-- les erreurs du formulaire sont marquées en anglais peu importe la langue du site.
+##### TRANCHE D'ÂGE
+
+- 18 - 70 ans
+
+##### STATUT SOCIOPROFESSIONNEL
+
+- employeurs potentiels
+- clients potentiels
+- futurs web designer
+- étudiants qui cherchent de l'inspiration
+- collègues (autres web designer)
+- professeurs
+- *que cherchent-ils ?*
+
+##### EXPÉRIENCE DE L'INFORMATIQUE ET D'INTERNET
+
+- peut varier d'une utilisation occasionnelle à quotidienne
+
+##### CONFIGURATION DU MATÉRIEL UTILISÉ
+
+- adapté à tous les supports aussi bien du côté esthétique qu'accessible
+
+### PROTOTYPAGE
+
+##### OBJECTIFS
+
+- prendre contact
+- découvrir qui je suis
+- voir mes projets
+
+##### INFORMATIONS REÇUES
+
+- qui je suis
+- parcours
+- identité graphique
+- professionnalisme (qualité du site, compétences dans la réalisation d'un site)
+- infos de contact
+- réseaux
+
+##### PAGES
+
+- accueil
+- projets
+- projet individuel
+- à propos
+- contact
