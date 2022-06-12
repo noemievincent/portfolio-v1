@@ -6,9 +6,9 @@
             <div class="about__container has-2-columns">
                 <section class="about__presentation" aria-labelledby="who">
                     <h3 id="who" aria-level="3"><?= __('Qui suis-je ?', 'prt'); ?></h3>
-                    <div class="about__content">
-						<?php the_content(); ?>
-                    </div>
+                    <p class="about__content">
+                        <?= get_the_content(); ?>
+                    </p>
                 </section>
                 <div class="about__right">
                     <section class="about__career" aria-labelledby="career">
