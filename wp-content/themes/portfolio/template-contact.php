@@ -85,7 +85,7 @@
                         </div>
                         <div class="address" itemscope itemtype="https://schema.org/PostalAddress">
                             <p class="coord__meta" itemprop="name"><?= get_field('address_name'); ?></p>
-                            <a href="https://goo.gl/maps/TF2PkphQEhrZBN1G7" target="_blank">
+                            <a href="">
                                 <p class="coord__meta" itemprop="streetAddress"><?= get_field('address_street'); ?></p>
                                 <p class="coord__meta" itemprop="postalCode"><?= get_field('address_city'); ?></p>
                             </a>
