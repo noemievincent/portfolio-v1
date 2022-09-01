@@ -14,9 +14,9 @@
     <meta property="og:site_name" content="Noémie Vincent - Web Developper">
     <title><?= wp_title('·', false, 'right') . 'Noémie Vincent'; ?></title>
     <link rel="stylesheet" type="text/css" href="<?= prt_mix('css/style.css'); ?>"/>
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
-<body class="<?= is_home() ? 'home' : 'main'?>">
+<body class="<?= is_home() ? 'home' : 'main' ?>">
 <header class="header">
     <input id="toggle" class="toggle" type="checkbox">
     <div class="info">
@@ -48,11 +48,11 @@
         <nav class="header__nav nav" aria-labelledby="nav">
             <h2 class="nav__title hidden" id="nav" aria-level="2"><?= __('Navigation principale', 'prt'); ?></h2>
             <?php wp_nav_menu([
-                'menu'       => 'primary',
-                'container'  => false,
+                'menu' => 'primary',
+                'container' => false,
                 'menu_class' => 'nav__container',
-                'menu_id'    => 'navigation',
-                'walker'     => new PrimaryMenuWalker(),
+                'menu_id' => 'navigation',
+                'walker' => new PrimaryMenuWalker(),
             ]); ?>
         </nav>
         <div class="languages">

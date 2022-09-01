@@ -95,6 +95,10 @@ a:hover, a:focus {
   background-size: cover;
 }
 
+.home .main-canvas, .main .home-canvas {
+  display: none;
+}
+
 .full__link {
   position: absolute;
   top: 0;
