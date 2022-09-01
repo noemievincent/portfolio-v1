@@ -1,0 +1,42 @@
+.career__container {
+  position: relative;
+  background-color: #E1C8B2;
+  border-radius: em(25, 16);
+  padding: em(10, 16) em(20, 16);
+  margin-bottom: em(20, 16);
+  transition: background-color ease-in-out 0.2s;
+}
+
+.career__container:hover {
+  background-color: #CCA789;
+}
+
+.career__card {
+  display: flex;
+  align-items: center;
+  gap: em(30, 16);
+}
+
+.career__head {
+  display: flex;
+  flex-direction: column;
+  gap: em(5, 16);
+  justify-content: space-between;
+}
+
+.career__dates {
+  display: flex;
+  gap: em(10, 16);
+  font-weight: 600;
+}
+
+.career__title {
+  font-weight: 300;
+  font-size: em(18, 16);
+}
+
+.career__location {
+  font-weight: 100;
+  font-style: italic;
+  margin-top: em(10, 16);
+}

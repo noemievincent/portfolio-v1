@@ -1,0 +1,19 @@
+@import 'career';
+
+.about__content {
+  font-weight: 100;
+  line-height: em(27, 16);
+  max-width: em(430, 16);
+}
+
+.about__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: em(30, 16);
+}
+
+.cta__link {
+  font-size: em(20, 16);
+}

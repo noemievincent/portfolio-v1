@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2022-05-31 20:30+0200\n"
-"PO-Revision-Date: 2022-05-31 20:30+0200\n"
+"POT-Creation-Date: 2022-08-12 09:45+0200\n"
+"PO-Revision-Date: 2022-08-12 09:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: fr_BE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -20,7 +20,9 @@ msgid "Page non trouvée"
 msgstr "Page non trouvée"
 
 #: 404.php:13
-msgid "l‘accueil"
+#, fuzzy
+#| msgid "l‘accueil"
+msgid "l’accueil"
 msgstr "l‘accueil"
 
 #: 404.php:13
@@ -51,19 +53,19 @@ msgstr "Il n’y a pas de projets à vous présenter..."
 msgid "Pied de page"
 msgstr "Pied de page"
 
-#: footer.php:5
+#: footer.php:6
 msgid "mentions légales"
 msgstr "mentions légales"
 
-#: header.php:21
+#: header.php:26
 msgid "Accueil"
 msgstr "Accueil"
 
-#: header.php:34
+#: header.php:40
 msgid "Navigation principale"
 msgstr "Navigation principale"
 
-#: partials/project.php:5 partials/project.php:8
+#: partials/project.php:2 partials/project.php:5
 msgid "Voir le projet :title"
 msgstr "Voir le projet :title"
 

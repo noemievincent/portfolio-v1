@@ -1,0 +1,33 @@
+.home header {
+  background-color: #CAA07D;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  display: flex;
+  justify-content: center;
+}
+
+.home main {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  font-family: montserrat, sans-serif;
+  color: #3D3329;
+  text-transform: uppercase;
+  font-size: em(40, 16);
+  text-align: center;
+  margin: auto 0;
+  letter-spacing: em(10, 40);
+}
+
+.head__container {
+  font-size: em(30, 40);
+}
+
+.home h2 {
+  margin-bottom: em(32, 80);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.home footer {
+  background-color: transparent;
+}

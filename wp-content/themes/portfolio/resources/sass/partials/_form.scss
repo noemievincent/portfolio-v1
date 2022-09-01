@@ -1,0 +1,67 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: em(15, 16);
+  max-width: em(460, 16);
+}
+
+.form .flex {
+  display: flex;
+  flex: 1;
+  gap: em(10, 16);
+}
+
+.form__field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 300;
+  margin-bottom: em(7, 16);
+}
+
+input[type=text], input[type=email], textarea {
+  font-family: museo-sans, sans-serif;
+  background-color: #FDFAF7;
+  border: 1px solid #CAA07D;
+  color: #3D3329;
+  border-radius: em(20, 13);
+  min-height: em(30, 13);
+  padding-left: em(12, 13);
+}
+
+textarea {
+  padding-top: em(10, 13);
+}
+
+::placeholder {
+  font-family: museo-sans, sans-serif;
+  color: rgba(61, 51, 41, 0.7);
+  transition: opacity .25s;
+  font-weight: 100;
+}
+
+:focus::placeholder {
+  opacity: 0;
+}
+
+.form__checklabel a, .error404__link {
+  color: #7DA7CA;
+}
+
+.form__title {
+  font-size: em(18, 16);
+}
+
+.form__error {
+  font-size: em(14, 16);
+  color: #B42511;
+  margin-bottom: em(3, 14);
+}
+
+.form__error + input[type=text], .form__error + input[type=email], .form__error + textarea { //21
+  background-color: #F2DAD5;
+  border-color: #B42511;
+}

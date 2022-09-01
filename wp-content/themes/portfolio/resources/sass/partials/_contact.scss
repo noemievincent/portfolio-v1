@@ -1,0 +1,39 @@
+@import 'form';
+
+.coords__container {
+  display: flex;
+  flex-direction: column;
+  gap: em(30, 16);
+}
+
+.contact__coord, .legals__coord {
+  display: flex;
+  flex-direction: column;
+  gap: em(10, 16);
+  font-weight: 100;
+}
+
+.coord__head {
+  font-size: em(20, 16);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: em(15, 20);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.coord__icon {
+  width: em(17, 20);
+  height: em(17, 20);
+}
+
+.address .coord__meta {
+  line-height: em(25, 16);
+}
+
+.legals__terms {
+  line-height: em(30, 16);
+  font-weight: 100;
+}

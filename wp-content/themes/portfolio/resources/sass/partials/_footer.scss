@@ -1,0 +1,52 @@
+footer {
+  font-size: em(14, 16);
+  background-color: #CAA07D;
+  padding: em(15, 14) em(20, 14);
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: em(35, 14);
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+}
+
+.footer__right, .footer__socials {
+  display: flex;
+  align-items: center;
+  gap: em(10, 14);
+}
+
+.footer__socials::before {
+  content: '';
+  width: em(20, 14);
+  height: em(1, 14);
+  margin: 0 em(10, 14);
+  background-color: #3D3329;
+}
+
+.footer__img {
+  height: em(30, 14);
+  fill: #3D3329;
+  transition: fill 0.3s ease-in-out;
+}
+
+.js-disabled .footer__img {
+  filter: invert(13%) sepia(35%) saturate(519%) hue-rotate(349deg) brightness(95%) contrast(80%);
+}
+
+.github:hover, .github:focus {
+  fill: #6E5494;
+}
+
+.linkedin:hover, .linkedin:focus {
+  fill: #0E76A8;
+}
+
+.js-disabled .github:hover {
+  filter: invert(38%) sepia(6%) saturate(3462%) hue-rotate(222deg) brightness(92%) contrast(91%);
+}
+
+.js-disabled .linkedin:hover {
+  filter: invert(42%) sepia(73%) saturate(6120%) hue-rotate(180deg) brightness(86%) contrast(89%);
+}
