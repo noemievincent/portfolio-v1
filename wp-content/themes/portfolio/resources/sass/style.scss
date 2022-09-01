@@ -231,13 +231,10 @@ a:hover, a:focus {
     max-width: unset;
   }
 
-  .singleProject__content {
-    margin: 0 em(100, 16);
-  }
-
   .singleProject__container {
     margin: 0;
   }
+
   .singleProject__nav {
     font-size: em(16, 16);
   }
@@ -457,7 +454,7 @@ a:hover, a:focus {
 
   .singleProject__nav {
     font-size: em(14, 16);
-    margin-top: em(20, 14);
+    //margin-top: em(20, 14);
   }
 
   .singleProject__content {
@@ -484,5 +481,12 @@ a:hover, a:focus {
     position: relative;
     height: em(30, 20);
     width: em(30, 20);
+  }
+}
+
+//475px
+@media (max-width: 498px) {
+  .iframe__container {
+    display: none;
   }
 }

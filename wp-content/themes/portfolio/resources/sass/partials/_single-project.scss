@@ -27,7 +27,7 @@
 .singleProject__content {
   font-weight: 100;
   line-height: em(25, 16);
-  margin: 0 em(100, 16);
+  height: 100%;
 }
 
 .singleProject__link {
@@ -43,10 +43,22 @@
   height: 100%;
 }
 
+.singleProject__frame {
+  width: 100%;
+  margin-top: em(30, 16);
+}
+
+.iframe__info {
+  font-weight: 100;
+}
+
+strong {
+  font-weight: 500;
+}
+
 .singleProject__nav {
   display: flex;
   justify-content: space-between;
-  margin-top: em(60, 16);
   font-size: em(18, 16);
 }
 
