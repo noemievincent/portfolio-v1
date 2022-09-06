@@ -1,6 +1,6 @@
 # Portfolio
 
-> lien vers le [site](https://noemie-vincent.be/fr/) et le [prototype](https://www.figma.com/file/CWqutSiFXm1OEDfcrmsMdy/Portfolio?node-id=51%3A2) (figma)
+> lien vers le [site](https://noemie-vincent.be/fr/)
 
 ## PUBLIC CIBLE
 
@@ -32,6 +32,7 @@
 ----------------------------------------
 
 ## PROTOTYPAGE
+> voir le [wireframe](https://www.figma.com/file/OTvoSPafjqMoZbjj0xrN3s/Antilope?node-id=0%3A1) et le [design](https://www.figma.com/file/CWqutSiFXm1OEDfcrmsMdy/Portfolio?node-id=51%3A2) (figma)
 
 > voir le [moodboard](/readme-img/moodboard.pdf)
 

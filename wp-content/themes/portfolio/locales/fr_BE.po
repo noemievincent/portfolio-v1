@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2022-08-12 09:45+0200\n"
-"PO-Revision-Date: 2022-08-12 09:46+0200\n"
+"POT-Creation-Date: 2022-09-01 12:17+0200\n"
+"PO-Revision-Date: 2022-09-01 12:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: fr_BE\n"
@@ -61,7 +61,7 @@ msgstr "mentions légales"
 msgid "Accueil"
 msgstr "Accueil"
 
-#: header.php:40
+#: header.php:49
 msgid "Navigation principale"
 msgstr "Navigation principale"
 
@@ -73,27 +73,35 @@ msgstr "Voir le projet :title"
 msgid "Retour aux projets"
 msgstr "Retour aux projets"
 
-#: single-project.php:14
+#: single-project.php:15
 msgid "Visiter le projet"
 msgstr "Visiter le projet"
+
+#: single-project.php:23
+msgid ""
+"Ceci est un simple aperçu du projet, cliquez sur le bouton <strong>\"Visitez "
+"le projet\"</strong> pour en découvrir davantage."
+msgstr ""
+"Ceci est un simple aperçu du projet, cliquez sur le bouton <strong>\"Visitez "
+"le projet\"</strong> pour en découvrir davantage."
 
 #: template-about.php:8
 msgid "Qui suis-je ?"
 msgstr "Qui suis-je ?"
 
-#: template-about.php:15
+#: template-about.php:14
 msgid "Parcours professionnel"
 msgstr "Parcours professionnel"
 
-#: template-about.php:20
+#: template-about.php:19
 msgid "Se rendre sur le site de l‘:name"
 msgstr "Se rendre sur le site de l‘:name"
 
-#: template-about.php:42
+#: template-about.php:41
 msgid "Découvrir mon CV"
 msgstr "Découvrir mon CV"
 
-#: template-about.php:44
+#: template-about.php:43
 msgid "Me contacter"
 msgstr "Me contacter"
 
