@@ -11,14 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('./wp-content/themes/portfolio/public')
-    .js('wp-content/themes/portfolio/resources/js/script.js', 'wp-content/themes/portfolio/public/js/')
-    .sass('wp-content/themes/portfolio/resources/sass/style.scss', 'wp-content/themes/portfolio/public/css/')
-    .options({
-        processCssUrls: false
-    })
-    .browserSync({
-        proxy: 'localhost:8888/',
-        notify: false
-    })
-    .version();
+mix
+	.setPublicPath('./public')
+	.js('./resources/js/script.js', './public/js/')
+	.sass('./resources/sass/style.scss', './public/css/')
+	.options({
+		processCssUrls: false
+	})
+	.browserSync({
+		proxy: 'portfolio-v1.local',
+		notify: false
+	})
+	.version();
