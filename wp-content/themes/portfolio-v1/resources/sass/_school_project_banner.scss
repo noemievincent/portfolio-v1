@@ -1,0 +1,11 @@
+#school-project-banner {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  inset-inline: 0;
+  background: rgba(255, 51, 51, 0.85);
+  color: #000;
+  text-align: center;
+  padding-block: em(16, 16);
+  padding-inline: em(4, 16);
+}

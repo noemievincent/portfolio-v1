@@ -6,6 +6,7 @@ $browser-context: 16; // Default
 	@return #{$pixels/$context}em;
 }
 
+@import 'school_project_banner';
 html,
 body {
 	height: 100%;

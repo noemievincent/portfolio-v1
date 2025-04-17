@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Portfolio\n"
-"POT-Creation-Date: 2022-09-01 12:17+0200\n"
-"PO-Revision-Date: 2022-09-01 12:17+0200\n"
+"POT-Creation-Date: 2025-04-17 13:42+0200\n"
+"PO-Revision-Date: 2025-04-17 13:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: Noémie\n"
 "Language: fr_BE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -57,17 +57,286 @@ msgstr "Pied de page"
 msgid "mentions légales"
 msgstr "mentions légales"
 
-#: header.php:26
+#: header.php:29
 msgid "Accueil"
 msgstr "Accueil"
 
-#: header.php:49
+#: header.php:52
 msgid "Navigation principale"
 msgstr "Navigation principale"
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "big_int"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+#, fuzzy
+#| msgid "nom"
+msgid "num"
+msgstr "nom"
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:315
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:317
+#: node_modules/yargs/build/lib/usage.js:321
+#: node_modules/yargs/build/lib/usage.js:323
+msgid "string"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "template_head"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "comment2"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "regexp"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "operator"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "eof"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "expand"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "punc"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "arrow"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "name"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "atom"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "keyword"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "("
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid ")"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid ":"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid ";"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid ","
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "]"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "}"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "{"
+msgstr ""
+
+#: node_modules/html-minifier-terser/node_modules/terser/dist/bundle.min.js:1
+msgid "["
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:419
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:422
+#, javascript-format
+msgid "Argument unexpected for: %s"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:428
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:442
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:495
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:431
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:445
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:498
+#, javascript-format
+msgid "Not enough arguments following: %s"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:634
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:635
+#, javascript-format
+msgid "Invalid JSON config file: %s"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:963
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:964
+#, javascript-format
+msgid "Invalid configuration: %s, opts.count excludes opts.array."
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs-parser/build/lib/yargs-parser.js:967
+#: node_modules/yargs-parser/build/lib/yargs-parser.js:968
+#, javascript-format
+msgid "Invalid configuration: %s, opts.count excludes opts.narg."
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:90
+#: node_modules/yargs/build/lib/usage.js:92
+msgid "Positionals:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:184
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:187
+#: node_modules/yargs/build/lib/usage.js:189
+#: node_modules/yargs/build/lib/usage.js:192
+msgid "command"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:193
+#: node_modules/yargs/build/lib/usage.js:198
+msgid "Commands:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:211
+#: node_modules/yargs/build/lib/usage.js:217
+msgid "default"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:213
+#: node_modules/yargs/build/lib/usage.js:219
+msgid "aliases:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:217
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:323
+#: node_modules/yargs/build/lib/usage.js:223
+#: node_modules/yargs/build/lib/usage.js:329
+#, javascript-format
+msgid "deprecated: %s"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:220
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:324
+#: node_modules/yargs/build/lib/usage.js:226
+#: node_modules/yargs/build/lib/usage.js:330
+msgid "deprecated"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:239
+#: node_modules/yargs/build/lib/usage.js:245
+msgid "Options:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:311
+#: node_modules/yargs/build/lib/usage.js:317
+msgid "boolean"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:313
+#: node_modules/yargs/build/lib/usage.js:319
+msgid "count"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:319
+#: node_modules/yargs/build/lib/usage.js:325
+msgid "array"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:321
+#: node_modules/yargs/build/lib/usage.js:327
+msgid "number"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:330
+#: node_modules/yargs/build/lib/usage.js:336
+msgid "required"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:332
+#: node_modules/yargs/build/lib/usage.js:338
+msgid "choices:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:351
+#: node_modules/yargs/build/lib/usage.js:359
+msgid "Examples:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:456
+#: node_modules/yargs/build/lib/usage.js:464
+msgid "generated-value"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/usage.js:473
+#: node_modules/yargs/build/lib/usage.js:481
+msgid "default:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/validation.js:160
+#: node_modules/yargs/build/lib/validation.js:160
+msgid "Invalid values:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/validation.js:162
+#: node_modules/yargs/build/lib/validation.js:162
+#, javascript-format
+msgid "Argument: %s, Given: %s, Choices: %s"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/validation.js:221
+#: node_modules/yargs/build/lib/validation.js:221
+msgid "Implications failed:"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/validation.js:255
+#: node_modules/yargs/build/lib/validation.js:255
+#: node_modules/yargs/build/lib/validation.js:266
+#, javascript-format
+msgid "Arguments %s and %s are mutually exclusive"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/validation.js:274
+#: node_modules/yargs/build/lib/validation.js:285
+#, javascript-format
+msgid "Did you mean %s?"
+msgstr ""
+
+#: node_modules/localtunnel/node_modules/yargs/build/lib/yargs-factory.js:174
+#: node_modules/yargs/build/lib/yargs-factory.js:183
+#, javascript-format
+msgid "Argument check failed: %s"
+msgstr ""
 
 #: partials/project.php:2 partials/project.php:5
 msgid "Voir le projet :title"
 msgstr "Voir le projet :title"
+
+#: school-project-banner.php:2
+msgid ""
+"Ce site a été réalisé dans le cadre d’un projet étudiant. Les informations "
+"présentées peuvent être incomplètes ou fictives et ne doivent pas être "
+"considérées comme exactes ou à jour."
+msgstr ""
+"Ce site a été réalisé dans le cadre d’un projet étudiant. Les informations "
+"présentées peuvent être incomplètes ou fictives et ne doivent pas être "
+"considérées comme exactes ou à jour."
 
 #: single-project.php:6
 msgid "Retour aux projets"

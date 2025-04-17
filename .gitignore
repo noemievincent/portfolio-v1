@@ -1,6 +1,8 @@
 .DS_STORE
 .vscode
 
+.idea
+
 /wp-admin/
 /wp-includes/
 
@@ -8,6 +10,8 @@
 /wp-content/languages
 /wp-content/plugins
 /wp-content/uploads
+/wp-content/smush-webp
+/wp-content/cache
 /wp-content/upgrade
 /wp-content/upgrade-temp-backup
 
